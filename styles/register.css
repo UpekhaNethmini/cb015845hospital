@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    background-color: rgb(24, 124, 77);
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(131, 161, 129);
+}
+
+.logo img {
+    max-width: 70px;
+}
+
+.logo{
+    display:flex;
+}
+ 
+ .logo h1{
+    font-size: 30px;
+    color:rgb(251,252,238);
+    Padding-left:5px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+span{
+    color: rgb(10, 56, 10);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:rgb(241, 250, 245);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.search-bar input {
+    padding: 5px;
+}
+
+
+body {
+    background-color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+
+.container {
+    background-color: rgb(251,252,238);
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    color: #333;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select, textarea {
+    padding: 5px;
+    margin-top: 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 85%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: rgb(18,18,18);
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    padding: 20px;
+    background-color: rgb(131, 161, 129);
+    text-align: center;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+footer nav ul li {
+    margin: 0 15px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #f7f1f1;
+}
+
+i {
+    font-size: 30px;
+    color: #ede7e7;
+    margin-left: 10px;
+}
+@media (max-width: 768px) {
+    /* Adjusting header layout for smaller screens */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Container adjustments for mobile */
+    .container {
+        padding: 2% 5%;
+    }
+
+    /* Pharmacy form adjustments */
+    input[type="submit"] {
+        width: 100%; /* Full-width button on mobile */
+        font-size: 18px;
+    }
+
+    /* Footer adjustments */
+    footer nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer nav ul li {
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="styles/order.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://kit.fontawesome.com/6176231e60.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.webp" alt="Logo">
+            <h1><span>Medi</span>Care</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="services.html">Service</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="pharmacy.html">Pharmacy</a></li>
+                <li><a href="order.html">consultations</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+        </div>
+    </header>
+
+    <main>
+        <div class="form-bg">
+        <div class="h1">
+        <h1>Consultation Request</h1>
+    </div>
+        <section class="form-section">
+            <form>
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Full Name">
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Email Address">
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+
+                <label for="gender">Gender</label>
+                <div class="gender-options">
+                    <div class="radio">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label></div>
+                    <div class="radio">
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label></div>
+                    <div class="radio">
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label></div>
+                </div>
+
+                <label for="doctor">Select Doctor</label>
+                <select id="doctor" name="doctor">
+                    <option value="select">Select</option>
+                    <option value="doctor1">Doctor 1</option>
+                    <option value="doctor2">Doctor 2</option>
+                    <option value="doctor3">Doctor 3</option>
+                </select>
+
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date">
+
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time">
+
+                <label for="message">Additional Message</label>
+                <textarea id="message" name="message" placeholder="Additional message"></textarea>
+
+                <div class="submit-button">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </div>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-x-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <p>&copy; this is a copy righted website</p>
+    </footer>
+</body>
+</html>

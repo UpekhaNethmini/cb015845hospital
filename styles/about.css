@@ -1,0 +1,383 @@
+/* Reset some basic elements */
+body, h1, h2, p, ul, li, a, button, table, th, td {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(131,161,129);
+}
+
+.logo img {
+    max-width: 70px;
+}
+.logo{
+    display:flex;
+}
+ 
+ .logo h1{
+    font-size: 30px;
+    color:rgb(251,252,238);
+    Padding-left:5px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+span{
+    color: rgb(10, 56, 10);
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(241, 250, 245);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: #f5f1f1;
+}
+
+.search-bar input {
+    padding: 5px;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 50px;
+    background-color:rgb(251,252,238);
+}
+
+.about-us h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.0em;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-image img {
+    max-width: 400px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-image:hover{
+    transform: scale(1.1);
+}
+
+
+.about-text {
+    max-width: 600px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.about-text p {
+    line-height: 1.8;
+}
+
+/* Our Locations Section */
+
+.location-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(162, 172, 161);
+}
+
+.location-heading h2{
+    padding-top: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color:rgb(18,18,18);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.location-cards{
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(162, 172, 161);
+    padding-bottom: 40px;
+    padding-top: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.location-card{
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.2);
+    background-color: rgb(245, 241, 241);
+}
+
+.location-card h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: grey;
+    padding-top: 20px;
+    font-weight: 800;
+
+}
+
+.location-card h3{
+    text-align: justify;
+    margin: 10px 20px 10px 20px;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.location-card p{
+    text-align: justify;
+    margin: 10px 20px 10px 20px;
+    color: #000000;
+    font-size: 14px;
+}
+
+.location-card ul li{
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.location-card iframe{
+    width: 350px;
+    height: 200px;
+    margin:10px 25px 0px 25px;
+    border: none;
+    border-radius:5px;
+    padding-bottom: 15px;
+}
+
+
+
+/* Contact Information Section */
+.contact-info {
+    padding: 50px;
+    background-color: rgb(251,252,238);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-info h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    opacity: 0; /* Initial state for animation */
+    animation: fadeIn 2s forwards; /* Fade-in animation */
+}
+
+.contact-info th, .contact-info td {
+    padding: 15px;
+    border: 1px solid rgb(18,18,18);
+    text-align: center;
+    background-color: white; /* Table color set to white */
+}
+
+.contact-info th {
+    background-color: white;
+}
+
+.contact-info a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Adds a slight slide-in effect */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Footer Section */
+footer {
+    padding: 20px;
+    background-color: rgb(131, 161, 129);
+    text-align: center;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+footer nav ul li {
+    margin: 0 15px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #f7f1f1;
+}
+
+i {
+    font-size: 30px;
+    color: #ede7e7;
+    margin-left: 10px;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        /* width: 100%; */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .about-content {
+        flex-direction: column;
+        width: 100%;
+    }
+    .about-image img {
+        max-width: 100%;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    .location-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .location-card {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 10px;
+        justify-content: center;
+    }
+    .location-card iframe{
+        width:300px;
+    }
+    
+    .location-card{
+    width:350px
+    }
+
+    .contact-info table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto; /* Allows horizontal scrolling */
+        white-space: nowrap; /* Prevents text wrapping */
+      }
+    
+      /* Hide table header (optional) */
+      thead {
+        display: none;
+      }
+    
+      /* Adjust table rows to appear as blocks */
+      tbody, tr {
+        display: block;
+        width: 100%;
+      }
+    
+      tr {
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+    
+      /* Make individual cells act as their own rows */
+      td {
+        display: block;
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        border: none;
+        border-bottom: 1px solid #eee;
+      }
+    
+      /* Create label for each cell (which will act as the header when collapsed) */
+      td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+      }
+
+      tfooter{
+        text-align: center;
+        justify-content: center;
+      }
+    
+    
+    /* Add some basic styling for links */
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+    }
+
+    footer nav ul li {
+        margin: 10px 0;
+    }
+
+    .social-media a img {
+        max-width: 25px;
+    }
+
+}

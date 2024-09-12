@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Page</title>
+    <link rel="stylesheet" href="styles/pharmacy.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://kit.fontawesome.com/6176231e60.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.webp" alt="logo">
+            <h1><span>Medi</span>Care</h1>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="services.html">Service</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="pharmacy.html">Pharmacy</a></li>
+                <li><a href="order.html">consultations</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Order Medicine from Hospital Pharmacy</h1>
+        <form action="submit_order.php" method="POST" class="pharmacy-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="medicine">Select Medicine:</label>
+            <select id="medicine" name="medicine" required>
+                <option value="">--Select Medicine--</option>
+                <option value="paracetamol">Paracetamol</option>
+                <option value="ibuprofen">Ibuprofen</option>
+                <option value="amoxicillin">Amoxicillin</option>
+                <option value="cetirizine">Cetirizine</option>
+                <option value="omeprazole">Omeprazole</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <label for="delivery">Delivery Option:</label>
+            <select id="delivery" name="delivery" required>
+                <option value="">--Select Delivery Option--</option>
+                <option value="pickup">Pickup at Pharmacy</option>
+                <option value="home_delivery">Home Delivery</option>
+            </select>
+
+            <input type="submit" value="Submit Order">
+        </form>
+    </div>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Service</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-media">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <p>&copy; this is a copy righted website</p>
+        </div>
+    </footer>
+</body>
+</html>

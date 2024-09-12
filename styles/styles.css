@@ -1,0 +1,276 @@
+/* Reset some basic elements */
+body, h1, h2, p, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+
+.hero{
+    background-color: rgb(24, 124, 77);
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(131, 161, 129);
+}
+
+.logo img {
+    max-width: 70px;
+}
+
+.logo{
+    display:flex;
+}
+ 
+ .logo h1{
+    font-size: 30px;
+    color:rgb(251,252,238);
+    Padding-left:5px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+span{
+    color: rgb(10, 56, 10);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:rgb(241, 250, 245);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.search-bar input {
+    padding: 5px;
+}
+
+/* Hero Section */
+.hero {
+    padding: 150px;
+    background-image: url(../images/Untitled\ design\ \(2\).webp);
+    background-size: 1700px 1100px; /* Set width and height */
+    background-repeat: no-repeat; /* Prevent repeating of image */
+    background-position: center;  /* Center the image */
+    text-align: center;
+}
+
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hero p {
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    padding: 50px;
+    background-color: rgb(251, 252, 238);
+}
+
+.about-image img {
+    max-width: 300px;
+    margin-right: 30px;
+    margin-left: 100px;
+ 
+}
+
+.about-content {
+    max-width: 600px;
+}
+
+.about-content h2 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #110e0e;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    color: #0a0a0a;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+
+.about-content button {
+    padding: 10px 20px;
+    background-color: #0d0f16;
+    border: none;
+    cursor: pointer;    
+}
+
+.about-content button a {
+    text-decoration: none;
+    color: #f7f1f1;
+}
+
+/* Services Section */
+.services {
+    padding: 50px;
+    background-color: rgb(18,18,18);
+    background-repeat: no-repeat;
+    background-size: 1500px 600px;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ede7e7;
+    font-size: 2.0em;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.0em;
+    
+}
+
+.card {
+    background-color:  rgb(251, 252, 238);
+    padding: 20px;
+    width: 20%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card i{
+    color:black;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.search-bar i{
+    display: none;
+}
+i {
+    font-size: 50px;
+    color: #0a0a0a;
+}
+.card ul {
+    list-style: none;
+    text-align: left;
+}
+
+.card ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+footer {
+    padding: 20px;
+    background-color: rgb(131, 161, 129);
+    text-align: center;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+footer nav ul li {
+    margin: 0 15px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #f7f1f1;
+}
+
+i {
+    font-size: 30px;
+    color: #ede7e7;
+    margin-left: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 50px;
+        background-size: cover;
+    }
+
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    .about {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .about-image img {
+        margin:10px;
+      
+    }
+
+    .about-content h2 {
+        text-align: center;
+    }
+
+    .services {
+        padding: 20px;
+    }
+
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+    }
+}
+
