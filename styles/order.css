@@ -8,6 +8,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.6;
     
+    
 }
 
 .form-bg{
@@ -27,7 +28,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: rgb(131, 161, 129);
+    background-color: rgb(62, 67, 62);
 }
 
 .logo img {
@@ -139,7 +140,7 @@ form textarea {
 
 footer {
     padding: 20px;
-    background-color: rgb(131, 161, 129);
+    background-color: rgb(62, 67, 62);
     text-align: center;
 }
 

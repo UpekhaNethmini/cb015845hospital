@@ -7,7 +7,7 @@
     background-color: rgb(24, 124, 77);
 }
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman';
     line-height: 1.6;
 
 }
@@ -17,7 +17,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: rgb(131, 161, 129);
+    background-color: rgb(62, 67, 62);
     width: 100%;
 }
 
@@ -62,59 +62,174 @@ nav ul li a {
     padding: 5px;
 }
 
-.container {
-    background-color:rgb(251,252,238);
-    padding: 2% 10%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 5% 20%;
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.pharmacy-form {
+.section-tabs{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-label {
-    margin-bottom: 8px;
-    color: #555;
-}
-
-input[type="text"], 
-input[type="email"], 
-input[type="tel"], 
-input[type="number"], 
-select {
-    padding: 10px;
-    margin-bottom: 15px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .sort label {
+    margin-right: 10px;
+  }
+  
+  .pagination button {
+    background-color: #6a6a6a;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
     border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
+  }
+  
+  .pagination button:hover {
+    background-color: #6a6a6a;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .product {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product img {
     width: 100%;
-}
-
-input[type="submit"] {
-    padding: 12px;
-    background-color:rgb(18,18,18);
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .product h3 {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .product p {
+    color: #6a6a6a;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .product .price {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .add-to-cart {
+    background-color: #6a6a6a;
     color: white;
     border: none;
-    border-radius: 5px;
+    padding: 8px 16px;
     cursor: pointer;
-    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #e0e0e0;
+  }
+  /* Table Container Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
 }
 
-input[type="submit"]:hover {
-    background-color: #218838;
+/* Table Header Styling */
+table th {
+    background-color: #6a6a6a; 
+    color: #ffffff;
+    font-weight: 600; 
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+    padding: 15px 18px; 
+    font-size: 15px; 
+}
+
+/* Table Cell Styling */
+table td {
+    border: 1px solid #e1e1e1; 
+    text-align: center;
+    padding: 14px 16px; 
+    font-size: 15px; 
+    color: #333333; 
+    background-color: #ffffff; 
+    transition: background-color 0.3s ease; 
+}
+
+/* Row Hover Effect */
+table tr:hover td {
+    background-color: #f8f8ff;
+    cursor: pointer;
+}
+
+/* Alternating Row Colors */
+table tr:nth-child(even) td {
+    background-color: #f9f9f9; 
+}
+
+/* Total Price Styling */
+#total-price {
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333333; 
+    padding-right: 10px;
+}
+
+  /* Section Tabs */
+.section-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.section-tabs .tab {
+  background-color: #e0e0e0;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 5px;
+}
+
+.section-tabs .tab.active {
+  background-color:#333333;
+  color: white;
+}
+
+footer p {
+    color: white;
 }
 
 footer {
     padding: 20px;
-    background-color: rgb(131, 161, 129);
+    background-color: rgb(62, 67, 62);
     text-align: center;
 }
 
@@ -139,6 +254,23 @@ i {
     margin-left: 10px;
 }
 
+/* Add shared styles for action buttons */
+.action-button {
+  background-color: #333333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.action-button:hover {
+  background-color: #6a6a6a;
+}
+
+
 @media (max-width: 768px) {
     /* Header */
     header {
@@ -156,35 +288,40 @@ i {
         margin: 10px 0;
     }
 
-    /* Container */
-    .container {
-        margin: 5% 5%; /* Reduce margins on smaller screens */
-        padding: 5% 5%; /* Adjust padding for mobile */
+    /* Buttons */
+    .action-button,
+    .add-to-cart,
+    .pagination button {
+        width: 100%;
+        padding: 12px 0;
+        font-size: 14px;
     }
 
-    h1 {
-        font-size: 1.5em; /* Adjust heading size for mobile */
+    /* Tables */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
     }
 
-    /* Form Elements */
-    input[type="text"], 
-    input[type="email"], 
-    input[type="tel"], 
-    input[type="number"], 
-    select {
-        font-size: 14px; /* Adjust input font size */
+    table th,
+    table td {
+        padding: 10px;
+        font-size: 14px;
     }
 
-    input[type="submit"] {
-        font-size: 14px; /* Adjust submit button size */
+    /* Product Grid */
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
 
-    /* Footer */
-    footer nav ul {
+    /* Section Tabs */
+    .section-tabs {
         flex-direction: column;
+        align-items: center;
     }
 
-    footer nav ul li {
-        margin: 10px 0;
+    .section-tabs .tab {
+        margin-bottom: 10px;
     }
 }

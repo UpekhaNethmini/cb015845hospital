@@ -18,7 +18,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: rgb(131, 161, 129);
+    background-color: rgb(62, 67, 62);
 }
 
 .logo img {
@@ -122,7 +122,7 @@ nav ul li a {
 
 footer {
     padding: 20px;
-    background-color: rgb(131, 161, 129);
+    background-color: rgb(62, 67, 62);
     text-align: center;
 }
 
@@ -153,6 +153,10 @@ i {
     gap: 20px; /* Space between grid items */
     max-width: 1200px;
     margin: 0 auto;
+}
+
+footer p {
+    color: white;
 }
 
 @media (max-width: 768px) {

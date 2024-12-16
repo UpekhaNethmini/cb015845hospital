@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+    <link rel="stylesheet" href="styles/orderpage.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Order Summary</h1>
+
+    <table id="cart-table">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Cart items will be dynamically added here -->
+        </tbody>
+    </table>
+
+    <div class="total-price" id="total-price">Total Price: LKR 0</div>
+
+    <form id="order-form">
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" required>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Delivery Address</label>
+            <input type="text" id="address" required>
+        </div>
+
+        <div class="payment-methods">
+            <div class="line">
+                <input type="radio" id="cash" name="payment-method" value="cash" checked>
+                <label for="cash">Cash on Delivery</label>
+            </div><br><br>
+            <div class="line">
+                <input type="radio" id="card" name="payment-method" value="card">
+                <label for="card">Credit Card</label>
+            </div>
+        </div>
+
+        <div class="payment-details" id="card-details">
+            <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" placeholder="1234 5678 9876 5432">
+            </div>
+
+            <div class="form-group">
+                <label for="expiry-date">Expiry Date</label>
+                <input type="text" id="expiry-date" placeholder="MM/YY">
+            </div>
+
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="123">
+            </div>
+        </div>
+
+        <button type="submit" class="btn" id="confirm-order">Confirm Order</button>
+        <button type="button" class="btn cancel" id="back-to-pharmacy">Back to Pharmacy</button>
+    </form>
+</div>
+<script src="scripts/order.js"></script>
+</body>
+</html>

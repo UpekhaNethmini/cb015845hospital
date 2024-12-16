@@ -1,0 +1,175 @@
+/* General Reset */
+body, h1, p, input, button, table {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif
+}
+
+/* Body Styling */
+body {
+    background: url(../images/Emergency-Care-Services.webp) center/cover no-repeat, rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container Styling */
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Table Styling */
+#cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#cart-table thead {
+    background-color: #333;
+    color: #fff;
+}
+
+#cart-table th, #cart-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#cart-table tbody tr:nth-child(odd) {
+    background-color: #f3f3f3;
+}
+
+.total-price {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.payment-methods {
+    margin-bottom: 15px;
+}
+
+.payment-methods div {
+    margin-bottom: 5px;
+}
+
+/* Card Details */
+.payment-details {
+    display: none;
+    margin-top: 15px;
+}
+
+.payment-details input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Button Styling */
+button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+button.cancel {
+    background-color: #ff4c4c;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+button.cancel:hover {
+    background-color: #e53e3e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    #cart-table th, #cart-table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    input[type="text"] {
+        font-size: 13px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+.payment-methods{
+    display: flex;
+    flex-direction: row;
+}
+
+.line{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.line label{
+    align-items: center;
+    justify-content: center;
+}
+
+.payment-methods input#card:checked ~ .payment-details {
+    display: block;
+}

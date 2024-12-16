@@ -1,0 +1,45 @@
+{
+  "analgesics": [
+    { "name": "Paracetamol", "price": 50, "image": "images/paracetamol.png" },
+    { "name": "Ibuprofen", "price": 100, "image": "images/Ibuprofen.png" },
+    { "name": "Aspirin", "price": 120, "image": "images/Asprin.png" },
+    { "name": "Bengay Balm", "price": 200, "image": "images/Bengay Balm.jpg" },
+    { "name": "Tramadol", "price": 50, "image": "images/Tramadol.jpg" },
+    { "name": "Codeine", "price": 100, "image": "images/Codeine.png" },
+    { "name": "Diclofenac", "price": 120, "image": "images/Diclofenac.avif" },
+    { "name": "Naproxen", "price": 200, "image": "images/Naproxen.jpg" }
+  ],
+  "antibiotics": [
+    { "name": "Amoxicillin", "price": 300, "image": "images/Amoxicillin.avif" },
+    { "name": "Azithromycin", "price": 400, "image": "images/Azithromycin.jpg" },
+    { "name": "Ciprofloxacin", "price": 50, "image": "images/Ciprofloxacin.jpeg" },
+    { "name": "Doxycycline", "price": 100, "image": "images/Doxycycline.avif" },
+    { "name": "Metronidazole", "price": 120, "image": "images/Metronidazole.jpg" },
+    { "name": "Clindamycin", "price": 200, "image": "images/Clindamycin.jpg" },
+    {"name":"Levofloxacin","price":120,"image":"images/Levofloxacin.webp"}
+  ],
+  "antidepressants": [
+    { "name": "Sertraline", "price": 800, "image": "images/Sertraline.jpeg" },
+    { "name": "Fluoxetine", "price": 850, "image": "images/Fluoxetine.jpg" },
+    { "name": "Venlafaxine", "price": 50, "image": "images/Venlafaxine.png" },
+    { "name": "Amitriptyline", "price": 100, "image": "images/Amitriptyline.jpg" },
+    { "name": " Bupropion", "price": 120, "image": "images/Bupropion.jpg" },
+    { "name": "Trazodone", "price": 200, "image": "images/Trazodone.webp" }
+  ],
+  "antihistamines": [
+    { "name": "Cetirizine", "price": 200, "image": "images/Cetirizine.jpg" },
+    { "name": "Loratadine", "price": 220, "image": "images/Loratadine.png" },
+    { "name": "Hydroxyzine", "price": 50, "image": "images/Hydroxyzine.jpg" },
+    { "name": "Meclizine", "price": 100, "image": "images/Meclizine.jpeg" },
+    { "name": "Promethazine", "price": 120, "image": "images/Promethazine.webp" },
+    { "name": "Fexofenadine", "price": 200, "image": "images/Fexofenadine.jpg" }
+  ],
+  "antihypertensives": [
+    { "name": "Amlodipine", "price": 500, "image": "images/Amlodipine.webp" },
+    { "name": "Losartan", "price": 550, "image": "images/Losartan.webp" },
+    { "name": "Enalapril", "price": 50, "image": "images/Enalapril.webp" },
+    { "name": "Metoprolol", "price": 100, "image": "images/Metoprolol.jpg" },
+    { "name": "Hydrochlorothiazide", "price": 120, "image": "images/Hydrochlorothiazide.jpg" },
+    { "name": "Prazosin", "price": 200, "image": "images/Prazosin.png" }
+  ]
+}

@@ -17,7 +17,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: rgb(131, 161, 129);
+    background-color: rgb(62, 67, 62);
 }
 
 .logo img {
@@ -122,7 +122,7 @@ button:hover {
 
 footer {
     padding: 20px;
-    background-color: rgb(131, 161, 129);
+    background-color: rgb(62, 67, 62);
     text-align: center;
 }
 
@@ -139,6 +139,10 @@ footer nav ul li {
 footer nav ul li a {
     text-decoration: none;
     color: #f7f1f1;
+}
+
+footer p {
+    color: white;
 }
 
 i {

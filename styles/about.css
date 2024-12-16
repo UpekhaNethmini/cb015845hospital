@@ -16,7 +16,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: rgb(131,161,129);
+    background-color: rgb(62, 67, 62);
 }
 
 .logo img {
@@ -230,7 +230,7 @@ nav ul li a {
 /* Footer Section */
 footer {
     padding: 20px;
-    background-color: rgb(131, 161, 129);
+    background-color: rgb(62, 67, 62);
     text-align: center;
 }
 
@@ -315,7 +315,7 @@ i {
         white-space: nowrap; /* Prevents text wrapping */
       }
     
-      /* Hide table header (optional) */
+      /* Hide table header  */
       thead {
         display: none;
       }
@@ -352,10 +352,14 @@ i {
         text-align: left;
       }
 
-      tfooter{
+      .tfooter{
         text-align: center;
         justify-content: center;
       }
+
+      footer p {
+        color: white;
+    }
     
     
     /* Add some basic styling for links */
