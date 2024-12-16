@@ -1,1 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+    background-color: rgb(24, 124, 77);
+}
+body {
+    font-family: 'Times New Roman';
+    line-height: 1.6;
 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(62, 67, 62);
+    width: 100%;
+}
+
+.logo img {
+    max-width: 70px;
+}
+
+.logo{
+    display:flex;
+}
+ 
+ .logo h1{
+    font-size: 30px;
+    color:rgb(251,252,238);
+    Padding-left:5px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+span{
+    color: rgb(10, 56, 10);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:rgb(241, 250, 245);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.search-bar input {
+    padding: 5px;
+}
+
+.section-tabs{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .sort label {
+    margin-right: 10px;
+  }
+  
+  .pagination button {
+    background-color: #6a6a6a;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .pagination button:hover {
+    background-color: #6a6a6a;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .product {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .product h3 {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .product p {
+    color: #6a6a6a;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .product .price {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .add-to-cart {
+    background-color: #6a6a6a;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #e0e0e0;
+  }
+  /* Table Container Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+}
+
+/* Table Header Styling */
+table th {
+    background-color: #6a6a6a; 
+    color: #ffffff;
+    font-weight: 600; 
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+    padding: 15px 18px; 
+    font-size: 15px; 
+}
+
+/* Table Cell Styling */
+table td {
+    border: 1px solid #e1e1e1; 
+    text-align: center;
+    padding: 14px 16px; 
+    font-size: 15px; 
+    color: #333333; 
+    background-color: #ffffff; 
+    transition: background-color 0.3s ease; 
+}
+
+/* Row Hover Effect */
+table tr:hover td {
+    background-color: #f8f8ff;
+    cursor: pointer;
+}
+
+/* Alternating Row Colors */
+table tr:nth-child(even) td {
+    background-color: #f9f9f9; 
+}
+
+/* Total Price Styling */
+#total-price {
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333333; 
+    padding-right: 10px;
+}
+
+  /* Section Tabs */
+.section-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.section-tabs .tab {
+  background-color: #e0e0e0;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 5px;
+}
+
+.section-tabs .tab.active {
+  background-color:#333333;
+  color: white;
+}
+
+footer p {
+    color: white;
+}
+
+footer {
+    padding: 20px;
+    background-color: rgb(62, 67, 62);
+    text-align: center;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+footer nav ul li {
+    margin: 0 15px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #f7f1f1;
+}
+
+i {
+    font-size: 30px;
+    color: #ede7e7;
+    margin-left: 10px;
+}
+
+/* Add shared styles for action buttons */
+.action-button {
+  background-color: #333333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.action-button:hover {
+  background-color: #6a6a6a;
+}
+
+
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Buttons */
+    .action-button,
+    .add-to-cart,
+    .pagination button {
+        width: 100%;
+        padding: 12px 0;
+        font-size: 14px;
+    }
+
+    /* Tables */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    table th,
+    table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* Product Grid */
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    /* Section Tabs */
+    .section-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-tabs .tab {
+        margin-bottom: 10px;
+    }
+}
